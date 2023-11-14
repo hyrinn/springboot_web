@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>아이디와 비번 서버 전송</title>
+</head>
+<style>
+    body {
+        background-color: silver;
+    }
+</style>
+<body>
+    <form action="" method="get"> 
+                <!--method에는 get,post 두가지 방식이 있는데 get은 비번, 아이디를 모두 볼 수 있지만 post는 보이지 않음-->
+        <strong>아이디와 비밀번호를 입력하세요.</strong> <br>
+        아이디 : <input type="text" name="id"> <br>
+        비밀번호 : <input type="password" name="pw"> <br>
+        <button type="submit">확인</button> <!--form 태그 안에 안적으면 get방식으로 서버에 전송이 안됨. 꼭 form 태그 안에 적어줘야 함-->
+    </form>
+</body>
+</html>
