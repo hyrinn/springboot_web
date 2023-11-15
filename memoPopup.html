@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>memo popup</title>
+</head>
+<body>
+<script th:inline="javascript">
+	alert([[${msg}]]);
+	location.href="/memo/list";
+</script>
+</body>
+</html>

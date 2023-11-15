@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>메모작성</title>
+</head>
+<style>
+	body {background-color: beige;}
+</style>
+<body>
+	<h2>자유롭게 작성하기</h2>
+	<form method="get" action="/memo/insert">
+		제목 : <input type="text" name="je"> <br>
+		내용 : <br>
+		<textarea name="nae" rows="5" cols="50"></textarea> <br>
+		<button>저장</button>
+	</form>
+</body>
+</html>

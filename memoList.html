@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>my memo</title>
+</head>
+<style>
+	.td1 {color: blue; border-color: blue;}
+	.title {width: 150px;}
+	.a {width:340px;}
+	.b {width:200px;}
+	body {background-color: aqua;}
+</style>
+<body>
+<div align="center">
+	<h2>나의 메모 리스트</h2>
+	<table border="1">
+		<tr> 
+			<th>no <th class="title">제목 <th class="a">내용 <th class="b">작성일시
+		<tr th:each="a:${arr}">
+			<td th:text="${a.no}">no
+			<td th:text="${a.je}" class="td1">je
+			<td th:text="${a.nae}">nae
+			<td th:text="${a.wdate}">wdate
+			
+	</table> <br>
+	<a href="/memo">작성 화면으로 돌아가기</a>
+</div>
+</body>
+</html>
